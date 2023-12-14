@@ -14,7 +14,7 @@ plt.bar(brands, values, color='pink')
 # Adding the title and labels
 plt.title("Most Valuable Brands Worldwide in 2023 (in billion U.S. dollars)")
 plt.xlabel("Brands") # X axis label
-plt.ylabel("Brand Value") # Y axis labe;
+plt.ylabel("Brand Value") # Y axis label
 
 # Rotating x-axis labels for better readability of words
 plt.xticks(rotation=40, ha="right") # x-axis = "brands"
