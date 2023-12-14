@@ -1,4 +1,4 @@
-#Basic math
+#BASIC MATH
 import math # Module to be used for calculation terms
 
 # Finding the ceil of a
