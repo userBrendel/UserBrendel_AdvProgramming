@@ -25,7 +25,8 @@ def toppings(): # Function to store the types of toppings
     # Display the available toppings with corresponding numbers
     print(", ".join([f"{i + 1}. {topping}" for i, topping in enumerate(toppings)]))   
     user_input = input("Enter topping numbers (1,2 separate with comma if choosing more than one item): ") # input that ask the user to enter topping numbers, separated by commas
-    selected_toppings = [toppings[int(index) - 1] for index in user_input.split(",") if 1 <= int(index) <= len(toppings)]  # Extract selected toppings based on user input
+    selected_toppings = [toppings[int(index) - 1] for index in user_input.split(",")
+                         if 1 <= int(index) <= len(toppings)]  # Extract selected toppings based on user input
     return selected_toppings
 
 
@@ -63,7 +64,7 @@ def payment(total):
             amount_paid = float(input(f"\nEnter amount paid (${total:.2f}): ")) # user input money
             if amount_paid >= total: # if input grater than total
                 change = amount_paid - total
-                print(f"Thank you for your payment! Your change is ${change:.2f}") # print
+                print(f"Thank you for ordering! Your change is ${change:.2f}") # print
                 break
             else:
                 print("Insufficient payment. Please enter a sufficient amount.")

@@ -72,7 +72,8 @@ class CoffeeShop:
         milk_check.pack(pady=5)
         
         #update command for cream additional charge
-        cream_check = ttk.Checkbutton(self.root, text="Add Cream (+$0.50)", variable=self.cream_var, command=self.update)
+        cream_check = ttk.Checkbutton(self.root, text="Add Cream (+$0.50)", variable=self.cream_var,
+                                      command=self.update)
         cream_check.pack(pady=5)
     
     # Money

@@ -50,7 +50,8 @@ def main():
     radius_entry = tk.Entry(circle_tab)
     # Button with the function as command
     # lambda is used to create an anonymous function
-    calculate_circle_button = tk.Button(circle_tab, text="Calculate Area", command=lambda: circle_area(radius_entry, circle_result_label))
+    calculate_circle_button = tk.Button(circle_tab, text="Calculate Area", 
+                                        command=lambda: circle_area(radius_entry, circle_result_label))
     circle_result_label = tk.Label(circle_tab, text="Area: ")
     
     # positioning
@@ -65,7 +66,8 @@ def main():
 
     side_label = tk.Label(square_tab, text="Enter side length:")
     side_entry = tk.Entry(square_tab)
-    calculate_square_button = tk.Button(square_tab, text="Calculate Area", command=lambda: square_area(side_entry, square_result_label))
+    calculate_square_button = tk.Button(square_tab, text="Calculate Area", 
+                                        command=lambda: square_area(side_entry, square_result_label))
     square_result_label = tk.Label(square_tab, text="Area: ")
 
     side_label.grid(row=0, column=0, padx=10, pady=10)
@@ -81,7 +83,9 @@ def main():
     length_entry = tk.Entry(rectangle_tab)
     width_label = tk.Label(rectangle_tab, text="Enter width:")
     width_entry = tk.Entry(rectangle_tab)
-    calculate_rectangle_button = tk.Button(rectangle_tab, text="Calculate Area", command=lambda: rectangle_area(length_entry, width_entry, rectangle_result_label))
+    calculate_rectangle_button = tk.Button(rectangle_tab, text="Calculate Area",
+                                           command=lambda: rectangle_area(length_entry, width_entry,
+                                                                          rectangle_result_label))
     rectangle_result_label = tk.Label(rectangle_tab, text="Area: ")
 
     length_label.grid(row=0, column=0, padx=10, pady=10)

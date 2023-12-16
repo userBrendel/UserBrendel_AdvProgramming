@@ -51,7 +51,7 @@ class Bio:
             file.write(f"Hometown: {hometown}\n")
         
         # Message box that tells the data successfully write on the txt file
-        messagebox.showinfo("Information saved to bio.txt")
+        messagebox.showinfo("Information saved", "Data has been successfully saved to bio.txt")
     
     # For reading the txt file 
     # read_button command
