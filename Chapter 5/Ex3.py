@@ -84,7 +84,7 @@ class Widget:
 
         # employee items and set data
         employee = Employee()
-        employee.setData(name, position, salary, len(self.employee_list) + 1)  # Set data for the employee items
+        employee.setData(name, position, salary, len(self.employee_list) + 1)  # this sets data for the employee items
 
         # Add/appending employee items to the list
         self.employee_list.append(employee)
@@ -99,7 +99,7 @@ class Widget:
         # Display employee data in the output label
         output_text = "Name\tPosition\tSalary\tID\n" #labels of the items
         for employee in self.employee_list:
-            output_text += f"{employee.getData()}\n"  # Append formatted employee data to output_text from iteration
+            output_text += f"{employee.getData()}\n"  # Appending formatted employee data to output_text from loop iteration
          # Set the text for output_text
         self.output_label.config(text=output_text)
 
