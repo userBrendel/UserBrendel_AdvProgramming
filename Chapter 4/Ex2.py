@@ -1,3 +1,4 @@
+#COUNT STRING
 import tkinter as tk
 
 def count_strings():
@@ -51,6 +52,5 @@ button_count.pack()
 # label to display result
 result_label = tk.Label(root, text="", wraplength=400)
 result_label.pack()
-
 
 root.mainloop()
