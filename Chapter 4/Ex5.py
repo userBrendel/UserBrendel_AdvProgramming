@@ -63,7 +63,8 @@ rules_info = tk.Label(root, text=rules_text, font=("Helvetica", 10), justify=tk.
 rules_info.pack()
 
 # a creative button with additional styling
-button_check = tk.Button(root, text="Check Password", command=check_pass, font=("Helvetica", 12), bg="#4CAF50", fg="white", padx=10, pady=5, bd=5)
+button_check = tk.Button(root, text="Check Password", command=check_pass, font=("Helvetica", 12),
+                         bg="#4CAF50", fg="white", padx=10, pady=5, bd=5)
 button_check.pack()
 
 root.mainloop()
