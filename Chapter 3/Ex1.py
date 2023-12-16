@@ -20,7 +20,8 @@ class Input: # Defining a class named Input for the functionality of the greetin
         self.left_frame.rowconfigure(0, weight=1)  
 
         # Title label
-        title_label = tk.Label(self.left_frame, text="Write Your Greeting", font=("Helvetica", 16, "bold"), fg="blue", bg="lightblue")
+        title_label = tk.Label(self.left_frame, text="Write Your Greeting", font=("Helvetica", 16, "bold"),
+                               fg="blue", bg="lightblue")
         title_label.grid(row=0, column=0, columnspan=2, sticky="nsew")
 
         greet_label = tk.Label(self.left_frame, text="Greetings for:", bg="lightblue")
@@ -37,7 +38,8 @@ class Input: # Defining a class named Input for the functionality of the greetin
         self.color_var = tk.StringVar() # Variable to store data type and the input
         self.color_var.set("black")  # Default color
         color_options = ["black", "red", "green", "blue", "purple", "orange"]
-        color_dropdown = ttk.Combobox(self.left_frame, textvariable=self.color_var, values=color_options, font=("Helvetica", 12))
+        color_dropdown = ttk.Combobox(self.left_frame, textvariable=self.color_var, values=color_options,
+                                      font=("Helvetica", 12))
         color_dropdown.grid(row=2, column=1, pady=5, sticky="ew")
 
         # Update Greeting button with reduced pady value

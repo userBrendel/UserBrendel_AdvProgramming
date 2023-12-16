@@ -68,6 +68,5 @@ button_convert.grid(row=4, column=0, columnspan=2, pady=(10, 0))
 result_label = ttk.Label(frame, text="Result: ")
 result_label.grid(row=5, column=0, columnspan=2, pady=(0, 10))
 
-
 root.mainloop()
 
