@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import messagebox
 
 def stats(): # Function for command
-    try:
         # Opening the file for reading
         with open("Chapter 4\petrolPrice.txt", "r") as file:
             # Read all lines from the file, skipping the header line
@@ -39,11 +38,6 @@ def stats(): # Function for command
             # Show an info dialog with the results
             messagebox.showinfo("Results", result_text)
 
-    except FileNotFoundError:
-        # Show an error dialog if the file is not found
-        messagebox.showerror(
-            "File Not Found", "petrolPrice.txt not found."
-        )
 
 # main window
 root = tk.Tk()
