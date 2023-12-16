@@ -42,7 +42,7 @@ def stats(): # Function for command
     except FileNotFoundError:
         # Show an error dialog if the file is not found
         messagebox.showerror(
-            "File Not Found", "petrolPrice.txt not found. Please make sure the file is in the same directory as this script."
+            "File Not Found", "petrolPrice.txt not found."
         )
 
 # main window
