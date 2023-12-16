@@ -3,7 +3,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-# Class to handle arithmetic operations
+# Class AO to handle the arithmetic operations
 class AO:
     def __init__(self):
         #  the result default
@@ -26,7 +26,7 @@ class AO:
         # Return the result message
         return f"Result: {self.result}"
 
-# Class for the graphical user interface (GUI)
+
 class widget:
     def __init__(self, root):
         self.root = root
@@ -77,7 +77,7 @@ class widget:
         style.configure('TButton', font=font, foreground='#000000', background='#00796b')  # Set button style
 
     def perform_calculation(self):
-        # Getting operation and operands from user input
+        # Getting operation from user input
         operation = self.operation_var.get()
         num1 = float(self.num1_entry.get())
         num2 = float(self.num2_entry.get())
