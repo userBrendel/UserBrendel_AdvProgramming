@@ -16,7 +16,8 @@ root.configure(bg="#83c1d4")  # Adding background color to the window
 # Creating a Label to add text
 # Variable 'text' is a Label and is a part of root
 # text to put the text, font to design the text, bg for background color
-text = tk.Label(root, text="Welcome to Graphical user interface(GUI)!", font=("Helvetica", 19, "bold"), bg="#eca1ed")
+text = tk.Label(root, text="Welcome to Graphical user interface(GUI)!", font=("Helvetica", 19, "bold"), 
+                bg="#eca1ed")
 
 # Placing the label 'text' in the window 
 # .pack helps to add positioning before the label is added to the root

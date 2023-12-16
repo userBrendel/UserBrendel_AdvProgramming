@@ -1,5 +1,4 @@
 # SQUARE GRID
-
 import tkinter as tk
 
 root = tk.Tk()

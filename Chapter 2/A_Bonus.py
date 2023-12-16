@@ -51,11 +51,13 @@ var_temperature = tk.StringVar()
 var_temperature.set("Celsius to Fahrenheit")
 
 # Radio button for Celsius to Fahrenheit conversion
-radio_c_to_f = ttk.Radiobutton(frame, text="Celsius to Fahrenheit", variable=var_temperature, value="Celsius to Fahrenheit")
+radio_c_to_f = ttk.Radiobutton(frame, text="Celsius to Fahrenheit", variable=var_temperature, 
+                               value="Celsius to Fahrenheit")
 radio_c_to_f.grid(row=2, column=0, columnspan=2, pady=(0, 10))
 
 # Radio button for Fahrenheit to Celsius conversion
-radio_f_to_c = ttk.Radiobutton(frame, text="Fahrenheit to Celsius", variable=var_temperature, value="Fahrenheit to Celsius")
+radio_f_to_c = ttk.Radiobutton(frame, text="Fahrenheit to Celsius", variable=var_temperature,
+                               value="Fahrenheit to Celsius")
 radio_f_to_c.grid(row=3, column=0, columnspan=2, pady=(0, 10))
 
 # Button to trigger the conversion

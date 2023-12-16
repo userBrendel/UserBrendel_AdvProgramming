@@ -52,7 +52,7 @@ def main():
         print(f"The area of the triangle is: {area}")
 
     else:
-        print("Invalid choice. Enter s, c, or t.")
+        print("Invalid choice. Enter s, c, or t only.")
 
 # Calling the main function to start the program
 if __name__ == "__main__":

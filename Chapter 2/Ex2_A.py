@@ -1,5 +1,4 @@
 #MANAGING LAYOUT
-
 import tkinter as tk
 
 root = tk.Tk()
