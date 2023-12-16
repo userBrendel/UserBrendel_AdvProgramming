@@ -50,34 +50,40 @@ class widget:
         self.output_label.pack()
 
         # Button sayHello() for Dog
-        self.dog_button = ttk.Button(root, text="Say Hello Dog", command=lambda: self.display_output(dog.sayHello()), style='TButton')
+        self.dog_button = ttk.Button(root, text="Say Hello Dog",
+                                     command=lambda: self.display_output(dog.sayHello()), style='TButton')
         self.dog_button.pack()
 
         # Button  makeNoise() for Dog
-        self.dog_noise_button = ttk.Button(root, text="Make Noise Dog", command=lambda: self.display_output(dog.makeNoise()), style='TButton')
+        self.dog_noise_button = ttk.Button(root, text="Make Noise Dog",
+                                           command=lambda: self.display_output(dog.makeNoise()), style='TButton')
         self.dog_noise_button.pack()
 
         # Button to display details for Dog
-        self.dog_details_button = ttk.Button(root, text="Show Dog Details", command=lambda: self.display_output(dog.animalDetails()), style='TButton')
+        self.dog_details_button = ttk.Button(root, text="Show Dog Details",
+                                             command=lambda: self.display_output(dog.animalDetails()), style='TButton')
         self.dog_details_button.pack()
 
         # Separator/ line
         ttk.Separator(root, orient='horizontal').pack(fill='x', padx=10, pady=10)
 
         # Button sayHello() for Cat -------------------------------------------------------------------------
-        self.cat_button = ttk.Button(root, text="Say Hello Cat", command=lambda: self.display_output(cat.sayHello()), style='TButton')
+        self.cat_button = ttk.Button(root, text="Say Hello Cat", 
+                                     command=lambda: self.display_output(cat.sayHello()), style='TButton')
         self.cat_button.pack()
 
         # Button makeNoise() for Cat
-        self.cat_noise_button = ttk.Button(root, text="Make Noise Cat", command=lambda: self.display_output(cat.makeNoise()), style='TButton')
+        self.cat_noise_button = ttk.Button(root, text="Make Noise Cat", 
+                                           command=lambda: self.display_output(cat.makeNoise()), style='TButton')
         self.cat_noise_button.pack()
 
         # Button to display details for Cat
-        self.cat_details_button = ttk.Button(root, text="Show Cat Details", command=lambda: self.display_output(cat.animalDetails()), style='TButton')
+        self.cat_details_button = ttk.Button(root, text="Show Cat Details",
+                                             command=lambda: self.display_output(cat.animalDetails()), style='TButton')
         self.cat_details_button.pack()
 
     def display_output(self, message):
-        # Display the output on the label
+        # Displaying the output on the label
         self.output_label.config(text=message)
 
 if __name__ == "__main__":
