@@ -4,16 +4,16 @@ from tkinter import ttk
 
 # Class student to store details of student.
 class student:
-    def __init__(self, name, m1, m2, m3):
+    def __init__(self, name, mark1, mark2, mark3):
         #name
         self.name = name
         #marks
-        self.m1 = m1
-        self.m2 = m2
-        self.m3 = m3
+        self.mark1 = mark1
+        self.mark2 = mark2
+        self.mark3 = mark3
 
     def calcGrade(self):
-        average = (self.m1 + self.m2 + self.m3) / 3 # formula to find average
+        average = (self.mark1 + self.mark2 + self.mark3) / 3 # formula to find average
         return average  
 
     def display(self): # for displaying the outcome
@@ -39,10 +39,10 @@ class widget:
         self.name_entry.pack()
         
         # mark 1
-        self.m1_label = ttk.Label(root, text="Mark 1:", font=font, background="#e0f7fa")
-        self.m1_label.pack()
-        self.m1_entry = ttk.Entry(root, font=font, style='TEntry.Background.TEntry')
-        self.m1_entry.pack()
+        self.mark1_label = ttk.Label(root, text="Mark 1:", font=font, background="#e0f7fa")
+        self.mark1_label.pack()
+        self.mark1_entry = ttk.Entry(root, font=font, style='TEntry.Background.TEntry')
+        self.mark1_entry.pack()
         
         # mark 2
         self.m2_label = ttk.Label(root, text="Mark 2:", font=font, background="#e0f7fa")
@@ -51,10 +51,10 @@ class widget:
         self.m2_entry.pack()
         
         # mark 3
-        self.m3_label = ttk.Label(root, text="Mark 3:", font=font, background="#e0f7fa")
-        self.m3_label.pack()
-        self.m3_entry = ttk.Entry(root, font=font, style='TEntry.Background.TEntry')
-        self.m3_entry.pack()
+        self.mark3_label = ttk.Label(root, text="Mark 3:", font=font, background="#e0f7fa")
+        self.mark3_label.pack()
+        self.mark3_entry = ttk.Entry(root, font=font, style='TEntry.Background.TEntry')
+        self.mark3_entry.pack()
 
         # Button to create the outcome
         self.create_button = ttk.Button(root, text="Create Student", command=self.outcome, style='TButton')
@@ -74,12 +74,12 @@ class widget:
     def outcome(self):
         # Getting user input for student details
         name = self.name_entry.get()
-        m1 = float(self.m1_entry.get())
-        m2 = float(self.m2_entry.get())
-        m3 = float(self.m3_entry.get())
+        mark1 = float(self.mark1_entry.get())
+        mark2 = float(self.m2_entry.get())
+        mark3 = float(self.mark3_entry.get())
 
         # Creating updated student objects
-        student1 = student(name, m1, m2, m3)
+        student1 = student(name, mark1, mark2, mark3)
 
         # Displaying student information
         # putting it in output_label position
