@@ -93,7 +93,7 @@ class Window:
                                       f"Dog 2: Name - {dog2.name}, Age - {dog2.age}")
 
         # Making the oldest dog woof
-        woof_text = Dog.oldest_dog_woof([dog1, dog2])
+        woof_text = Dog.find_oldest([dog1, dog2])
         self.output_label.config(text=f"{self.output_label.cget('text')}\n{woof_text}")
 
 if __name__ == "__main__":
