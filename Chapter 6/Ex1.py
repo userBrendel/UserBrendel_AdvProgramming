@@ -4,6 +4,7 @@ import math # Module to be used for calculation terms
 # Finding the ceil of a
 a = 2.3
 ceil_result = math.ceil(a) # math.ceil returns the smallest integer greater than or equal to a
+print(f"For a = {a}, ceil(a) = {ceil_result}")
 
 # Find the floor of a
 a = 2.3

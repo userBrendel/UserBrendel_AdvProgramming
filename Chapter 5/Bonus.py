@@ -60,13 +60,19 @@ class Widget:
         self.output_label.pack()
 
         # Buttons to interact with the user-input animal
-        self.say_hello_button = ttk.Button(root, text=f"Say Hello {user_animal.type}", command=lambda: self.display_output(user_animal.sayHello()), style='TButton')
+        self.say_hello_button = ttk.Button(root, text=f"Say Hello {user_animal.type}",
+                                           command=lambda: self.display_output(user_animal.sayHello()), 
+                                           style='TButton')
         self.say_hello_button.pack()
 
-        self.make_noise_button = ttk.Button(root, text=f"Make Noise {user_animal.type}", command=lambda: self.display_output(user_animal.makeNoise()), style='TButton')
+        self.make_noise_button = ttk.Button(root, text=f"Make Noise {user_animal.type}",
+                                            command=lambda: self.display_output(user_animal.makeNoise()),
+                                            style='TButton')
         self.make_noise_button.pack()
 
-        self.show_details_button = ttk.Button(root, text=f"Show {user_animal.type} Details", command=lambda: self.display_output(user_animal.animalDetails()), style='TButton')
+        self.show_details_button = ttk.Button(root, text=f"Show {user_animal.type} Details",
+                                              command=lambda: self.display_output(user_animal.animalDetails()),
+                                              style='TButton')
         self.show_details_button.pack()
 
     def display_output(self, message):
